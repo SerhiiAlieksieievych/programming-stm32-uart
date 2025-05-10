@@ -212,9 +212,7 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart1){
-	HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
-}
+
 /* USER CODE END 4 */
 
 /**
