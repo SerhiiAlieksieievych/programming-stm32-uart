@@ -43,7 +43,7 @@
 UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
-
+uint8_t var[] = {"I'm trashcat!\r\n"};
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -98,7 +98,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  HAL_UART_Transmit(&huart1, (uint8_t*) "I'm trashcat!\r\n", 16, 100);
+	  HAL_UART_Transmit(&huart1, &var[0], 16, 100);
 	  HAL_Delay(300);
     /* USER CODE BEGIN 3 */
   }
